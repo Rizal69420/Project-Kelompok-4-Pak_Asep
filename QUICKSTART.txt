@@ -1,0 +1,175 @@
+QUICK START GUIDE - Rumah Sakit Sehat Sentosa
+=============================================
+
+📋 STEP-BY-STEP SETUP
+
+1. COPY PROJECT
+   - Copy folder "Rumah Sakit" ke C:\xampp\htdocs\
+
+2. BUAT DATABASE
+   - Buka browser: http://localhost/Rumah%20Sakit/database/create_db.php
+   - Tunggu sampai selesai (akan ada pesan "Database berhasil dibuat!")
+   - Catat login credentials yang ditampilkan
+
+3. AKSES WEBSITE
+   - Homepage: http://localhost/Rumah%20Sakit/
+   - Login/Register: http://localhost/Rumah%20Sakit/auth.php
+
+---
+
+🔑 DEFAULT LOGIN CREDENTIALS
+
+ADMIN:
+Email: admin@sehat-sentosa.com
+Password: admin123
+
+DOKTER (Sample):
+Email: ahmad@sehat-sentosa.com
+Password: doctor123
+
+---
+
+📁 FILE STRUCTURE
+
+Rumah Sakit/
+├── index.html                    ← Halaman awal/landing page
+├── auth.php                      ← Login & Register
+├── styles.css                    ← CSS global (sudah diupdate)
+├── script.js                     ← JavaScript global
+│
+├── database/
+│   ├── config.php               ← Konfigurasi database
+│   └── create_db.php            ← Script membuat database
+│
+├── admin/                        ← Halaman Admin
+│   ├── dashboard.php            ← Dashboard dengan stats
+│   ├── doctors.php              ← Kelola dokter
+│   ├── departments.php          ← Kelola departemen
+│   ├── services.php             ← Kelola layanan
+│   ├── appointments.php         ← Kelola appointment
+│   ├── users.php                ← Kelola user
+│   └── messages.php             ← Kelola pesan
+│
+├── user/
+│   └── index.php                ← Halaman user (home, booking, dll)
+│
+├── api/
+│   ├── handler.php              ← API endpoints
+│   └── client.js                ← JavaScript client library
+│
+└── README.md                      ← Dokumentasi lengkap
+
+---
+
+✨ FITUR UTAMA
+
+UNTUK USER:
+✅ Registrasi akun baru
+✅ Login dengan email & password
+✅ Lihat daftar dokter & departemen
+✅ Lihat layanan kesehatan dengan harga
+✅ Booking appointment dengan dokter
+✅ Lihat riwayat appointment
+✅ Hubungi rumah sakit via form kontak
+✅ Real-time appointment status
+
+UNTUK ADMIN:
+✅ Dashboard dengan statistik real-time
+✅ Kelola dokter (tambah, edit, hapus)
+✅ Kelola departemen (tambah, edit, hapus)
+✅ Kelola layanan (tambah, edit, hapus)
+✅ Kelola appointment (view, edit status)
+✅ Kelola user (view, hapus)
+✅ Kelola pesan dari pengunjung (read, reply)
+✅ Real-time status updates (auto-refresh)
+
+---
+
+🎨 DESAIN FEATURES
+
+✓ Responsive design (desktop, tablet, mobile)
+✓ User-friendly interface dengan tema hijau & biru
+✓ Smooth animations & transitions
+✓ Modern grid-based layout
+✓ Accessible forms dengan validation
+✓ Professional styling
+
+---
+
+🔒 SECURITY
+
+✓ Password hashing dengan bcrypt
+✓ Session-based authentication
+✓ Role-based access control (user, doctor, admin)
+✓ SQL Injection prevention (prepared statements)
+✓ Input validation (server & client-side)
+
+---
+
+🐛 TROUBLESHOOTING
+
+PROBLEM: "Connection Failed" saat akses auth.php
+SOLUTION: Jalankan http://localhost/Rumah%20Sakit/database/create_db.php
+
+PROBLEM: Blank page / Error 500
+SOLUTION: Cek PHP error logs di C:\xampp\logs\php_error.log
+
+PROBLEM: Database sudah ada, ingin reset?
+SOLUTION: 
+  1. Drop database: phpMyAdmin > Databases > Select > Drop
+  2. Jalankan create_db.php lagi
+
+PROBLEM: Appointment tidak tersimpan
+SOLUTION: Pastikan login sebagai user, bukan admin
+
+---
+
+🔄 REAL-TIME FEATURES
+
+Dashboard Admin:
+- Update stats setiap 30 detik
+- Update unread messages setiap 60 detik
+- Auto-refresh page setiap 30 detik
+
+User Appointments:
+- Appointment status updates real-time
+- Check status changes via dashboard
+
+---
+
+📊 DATABASE TABLES
+
+users: User, admin, dokter
+departments: Departemen kesehatan
+doctors: Informasi dokter dengan departemen
+services: Layanan kesehatan dengan harga
+appointments: Booking appointment pasien
+messages: Pesan/kontak dari pengunjung
+
+---
+
+🔗 IMPORTANT URLS
+
+Homepage: http://localhost/Rumah%20Sakit/
+Login: http://localhost/Rumah%20Sakit/auth.php
+User Dashboard: http://localhost/Rumah%20Sakit/user/index.php
+Admin Dashboard: http://localhost/Rumah%20Sakit/admin/dashboard.php
+Create DB: http://localhost/Rumah%20Sakit/database/create_db.php
+
+---
+
+💡 TIPS
+
+- Register user baru untuk test
+- Admin bisa kelola data dokter, departemen, layanan
+- User bisa booking appointment dan lihat status
+- Real-time updates akan refresh automatically
+- Responsive design - coba buka di mobile
+
+---
+
+✅ READY TO USE!
+
+Website siap digunakan. Selamat mencoba! 🏥
+
+Untuk pertanyaan atau masalah, lihat README.md untuk dokumentasi lengkap.

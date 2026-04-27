@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumah Sakit Sehat Sentosa - Layanan Kesehatan Terpercaya</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .landing-hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            min-height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .landing-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .landing-hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            max-width: 600px;
+        }
+
+        .landing-cta {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .landing-cta .btn {
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .landing-cta .btn-primary {
+            background-color: white;
+            color: var(--primary-color);
+        }
+
+        .landing-cta .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        .landing-cta .btn-secondary {
+            background-color: rgba(255,255,255,0.2);
+            color: white;
+            border: 2px solid white;
+        }
+
+        .landing-cta .btn-secondary:hover {
+            background-color: white;
+            color: var(--primary-color);
+        }
+
+        .features-section {
+            padding: 60px 20px;
+            background: white;
+        }
+
+        .features-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: var(--light-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .stats-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 60px 20px;
+        }
+
+        .stats-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .stat-item h4 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-item p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            .landing-hero h1 {
+                font-size: 2rem;
+            }
+
+            .landing-hero p {
+                font-size: 1rem;
+            }
+
+            .landing-cta {
+                flex-direction: column;
+            }
+
+            .landing-cta .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">Rumah Sakit Sehat Sentosa</div>
+            <nav>
+                <ul>
+                    <li><a href="auth.php" class="btn btn-primary" style="padding: 0.6rem 1.2rem;">Login / Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="landing-hero">
+        <h1>🏥 Rumah Sakit Sehat Sentosa</h1>
+        <p>Layanan Kesehatan Terbaik dengan Teknologi Modern dan Dokter Profesional</p>
+        <div class="landing-cta">
+            <a href="auth.php" class="btn btn-primary">Daftar Sekarang</a>
+            <a href="auth.php" class="btn btn-secondary">Login</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2 style="text-align: center; color: var(--primary-color); margin-bottom: 3rem; font-size: 2rem;">Mengapa Memilih Kami?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍⚕️</div>
+                    <h3>Dokter Profesional</h3>
+                    <p>Tim dokter spesialis berpengalaman siap melayani Anda dengan sepenuh hati</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏥</div>
+                    <h3>Fasilitas Modern</h3>
+                    <p>Dilengkapi dengan peralatan medis terkini dan standar internasional</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⏰</div>
+                    <h3>Layanan 24/7</h3>
+                    <p>Selalu siap melayani kebutuhan kesehatan Anda kapan saja</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💻</div>
+                    <h3>Booking Online</h3>
+                    <p>Mudah membuat janji temu dengan dokter melalui aplikasi web</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Terpercaya</h3>
+                    <p>Privasi dan keamanan data pasien adalah prioritas utama kami</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Harga Terjangkau</h3>
+                    <p>Layanan kesehatan berkualitas dengan harga yang kompetitif</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h4>10+</h4>
+                    <p>Departemen Kesehatan</p>
+                </div>
+                <div class="stat-item">
+                    <h4>50+</h4>
+                    <p>Dokter Profesional</p>
+                </div>
+                <div class="stat-item">
+                    <h4>5000+</h4>
+                    <p>Pasien Puas</p>
+                </div>
+                <div class="stat-item">
+                    <h4>24/7</h4>
+                    <p>Layanan Emergency</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="background: var(--light-bg); padding: 60px 20px; text-align: center;">
+        <div class="container">
+            <h2 style="color: var(--primary-color); margin-bottom: 2rem;">Siap Menjaga Kesehatan Anda?</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 2rem; color: var(--text-light); max-width: 600px; margin-left: auto; margin-right: auto;">
+                Daftarkan akun Anda sekarang dan mulai booking appointment dengan dokter pilihan Anda.
+            </p>
+            <div class="landing-cta">
+                <a href="auth.php" class="btn btn-primary" style="background-color: var(--primary-color); color: white;">Buat Akun Baru</a>
+                <a href="auth.php" class="btn btn-secondary" style="background-color: white; color: var(--primary-color); border: 2px solid var(--primary-color);">Login Sekarang</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Rumah Sakit Sehat Sentosa. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>
